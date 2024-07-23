@@ -9,7 +9,10 @@
 <body>
     <div class="container">
         <h1>Twitch Livestream</h1>
-        <div id="twitch-embed"></div>
+        <input type="text" id="channel-name" placeholder="Enter Twitch channel name">
+        <button onclick="startStream()">Start Stream</button>
+        <div class="embed-container" id="twitch-embed"></div>
+        <p class="note">Please note that ads may play during the stream.</p>
     </div>
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
     <script src="script.js"></script>
